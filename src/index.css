@@ -39,6 +39,7 @@ code {
   justify-content: center;
   align-items: center;
   margin-top: 20px; /* Adjust the spacing between title and content */
+  max-width: 100%; /* Add this line */
 }
 
 .bordered-video,
@@ -48,3 +49,40 @@ code {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
   margin: 10px; /* Adjust the spacing around video and canvas */
 }
+
+@media (min-width: 600px) and (max-width: 1500px) {
+  .navbar h1 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  
+  .content {
+    flex-direction: column; /* Stack content vertically */
+    margin-top: 30px; /* Reduce spacing between title and content */
+  }
+  
+  .bordered-video,
+  .appcanvas {
+    width: 50%; /* Add 'px' to the values */
+    height: auto; /* Add 'px' to the values */
+    margin: 10px auto; /* Reduce spacing around video and canvas */
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar h1 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+  
+  .content {
+    flex-direction: column; /* Stack content vertically */
+    margin-top: 10px; /* Reduce spacing between title and content */
+  }
+  
+  .bordered-video,
+  .appcanvas {
+    width: 310px; /* Add 'px' to the values */
+    height: 280px; /* Add 'px' to the values */
+    margin: 5px; /* Reduce spacing around video and canvas */
+  }
+}
+
