@@ -1,13 +1,50 @@
 body {
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(123, 107, 107);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* Style the navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #3c3636;
+}
+
+.navbar h1 {
+  color: #d6c060; /* Vibrant pink */
+  font-size: 28px; /* Slightly larger font size */
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: uppercase; /* Uppercase text */
+  
+}
+
+
+/*CSS for EmotionDetector*/
+/* Style the video and canvas elements */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust the spacing between title and content */
+}
+
+.bordered-video,
+.appcanvas {
+  border: 5px solid #fff; /* White border around the video and canvas */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  margin: 10px; /* Adjust the spacing around video and canvas */
 }
